@@ -94,7 +94,7 @@ def execute_icnc_file(filename, api_type):
 
     # Pass the combined content to the OpenAI client
     chat_completion = client.chat.completions.create(
-        model="text-davinci-003",  # Replace with your model
+        model="text-davinci-003", 
         messages=[
             {"role": "user", "content": combined_prompt}
         ],
